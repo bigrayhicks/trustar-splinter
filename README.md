@@ -28,3 +28,20 @@ with a file named `iocfile.txt`, is
 
     The model extracts the IOCs in `iocfile.txt` and uses them to make a 
     prediction about which RAT the IOCs are connected to.
+
+## Configuring Splinter
+
+Inside of `src`, there is a `constants.py` file which controls some of the splinter output. 
+
+    num_predictions
+        
+  controls the number of predictions that will be output by the model.
+  
+If you want to use a larger portion of barncat, you can modify 
+
+    data_name
+
+To use that data, it must be contained in a csv and have the column labels
+   
+    malware,indicator,type,label
+
